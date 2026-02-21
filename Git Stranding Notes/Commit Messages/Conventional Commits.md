@@ -35,6 +35,8 @@ feat: add hat wobble
 feat: add reply button
 feat(auth): implement login validation
 feat(api): support pagination
+feat(ui): add dark mode toggle  
+feat(search): implement keyword filtering
 ```
 
 ## fix ↔ Bug fix
@@ -44,6 +46,7 @@ feat(api): support pagination
 fix(ui): correct reply button alignment  
 fix(auth): prevent login crash on empty input  
 fix(api): handle null response properly
+fix(search): correct case-sensitive filtering bug
 ```
 
 ## refactor ↔ Code improvement, no behavior change
@@ -51,7 +54,8 @@ fix(api): handle null response properly
 — If the app works the same before and after → `refactor`.
 ```bash
 refactor(ui): simplify button component logic  
-refactor(api): extract validation into helper function  
+refactor(api): extract validation into helper function
+refactor(auth): simplify validation conditions  
 refactor: clean up unused variables
 ```
 
@@ -61,6 +65,7 @@ refactor: clean up unused variables
 docs: update README installation steps  
 docs: add usage example  
 docs: correct typo in documentation
+docs(api): add endpoint usage examples
 ```
 
 ## chore ↔ Maintenance / Setup
@@ -70,18 +75,25 @@ chore: add .gitignore
 chore: configure eslint  
 chore: update dependencies  
 chore: initial project setup
+chore: rename folders for consistency
 ```
 
 ## style ↔
 — For formatting only (no logic change).
 ```bash
 style: format code with prettier
+style: fix indentation in script.js  
+style: remove trailing whitespace  
+style(ui): adjust spacing in CSS file
 ```
 
 ## test ↔
 — If you start writing tests:
 ```bash
 test: add unit tests for login validation
+test(auth): update validation tests for new password rules
+test(api): fix failing pagination test  
+test(ui): correct snapshot mismatch
 ```
 
 ## perf
@@ -89,10 +101,24 @@ test: add unit tests for login validation
 — Use only if performance specifically improved.
 ```bash
 perf: optimize message rendering loop
+perf(api): reduce redundant database queries  
+perf(ui): debounce search input handler
 ```
 
 ## ci
 — A commit of `ci` means changes related to Continuous Integration (usually `yml` and other configuration files).
+```bash
+ci: add GitHub Actions workflow  
+ci: fix failing CI pipeline  
+ci: update test workflow configuration  
+ci: add Node.js version matrix
+```
 
 ## build
 —  A commit of `build` means changes related to the build of the project and dependencies. (Basically, anything that can change the build step of the application.)
+```bash
+build: update webpack configuration  
+build: upgrade TypeScript to v5  
+build: modify Vite config for alias support  
+build: update Dockerfile setup
+```
