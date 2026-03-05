@@ -23,5 +23,5 @@ git branch -M main
 git push -u origin main
 ```
 
-![[Creating Repo from GitHub img1....png]]
+![[Creating Repo from GitHub img1....png|717]]
 

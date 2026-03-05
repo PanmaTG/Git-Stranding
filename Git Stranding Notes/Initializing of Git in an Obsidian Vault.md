@@ -15,7 +15,7 @@ or if git bash is installed → right-click in an open space inside the vault an
 # 3. Initialize the repository
 git init
 
-# 4. Connect repository to the created remote repo in GitHub 
+# 4. Connect local repository to the created remote repo in GitHub 
 git remote add origin <GitHub repository URL>
 
 # 5. Fetch commits if behind

@@ -30,6 +30,9 @@
   "appIcons": {},
   "tabIcons": {},
   "fileIcons": {
+    "Git Stranding Notes/Creating Repo from GitHub Website/imgs/Creating Repo from GitHub img1....png": {
+      "icon": "lucide-image"
+    },
     "Git Stranding Notes/Undo and Revert pushed Git Commits/imgs/Git Reset img1.png": {
       "icon": "lucide-image"
     }
