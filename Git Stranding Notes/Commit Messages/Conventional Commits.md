@@ -52,6 +52,7 @@ fix(search): correct case-sensitive filtering bug
 ## refactor ↔ Code improvement, no behavior change
 — Use when you restructure code but it behaves the same.
 — If the app works the same before and after → `refactor`.
+— (from Martin Fowler’s definition): **Refactoring** = internal change **without observable behavior change**.
 ```bash
 refactor(ui): simplify button component logic  
 refactor(api): extract validation into helper function
@@ -60,7 +61,8 @@ refactor: clean up unused variables
 ```
 
 ## docs ↔ Documentation only
-— Use when you change README, comments, guides.
+— Use when you change README, comments, and guides.
+— Inline comments = documentation.
 ```bash
 docs: update README installation steps  
 docs: add usage example  
@@ -69,13 +71,14 @@ docs(api): add endpoint usage examples
 ```
 
 ## chore ↔ Maintenance / Setup
-— Use for non-feature, non-bug tasks.
+— Use for non-feature, non-bug tasks, and internal cleanup.
 ```bash
 chore: add .gitignore  
 chore: configure eslint  
 chore: update dependencies  
 chore: initial project setup
 chore: rename folders for consistency
+chore(debug): remove console logging
 ```
 
 ## style ↔
